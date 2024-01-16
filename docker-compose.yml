@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  my-backend:
+    image: "my-spring-img"
+    ports:
+      - "8080:8080"
+    restart: always
+    volumes:
+      - .:/usr/src/app
